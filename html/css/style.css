@@ -6618,15 +6618,45 @@ header nav.navbar .navbar-nav li:last-child { box-shadow: 0 0 18px rgba(0, 0, 0,
 @media only screen and (max-width: 991.98px) { .our-services .section-heading-left { margin-top: 0; text-align: center; } }
 .our-services .section-heading { font-size: 28px; font-weight: 700; margin: 22px 0; line-height: 37px; color: #314584; }
 
-footer { background: #515151; padding: 8rem 0; color: #fff; }
-footer ul { width: 100%; margin-top: 10px; margin-left: 0; text-align: center; }
-footer ul li { display: inline-block; transition: all .3s ease-in-out; }
+.inner-container { width: 100%; float: left; padding: 5rem 0; }
+.inner-container .row { margin: 0 !important; }
+.inner-container .section-heading { font-size: 28px; font-family: "Work Sans", sans-serif; text-align: center; color: #c40721; margin-top: 0; margin-bottom: 2rem; }
+@media only screen and (max-width: 767.98px) { .inner-container .section-heading { font-size: 19px; font-weight: bold; text-align: left; } }
+.inner-container .sub-heading { font-size: 20px; font-family: "Work Sans", sans-serif; color: #314584; float: left; width: 100%; margin-bottom: 2rem; margin-bottom: 0; }
+@media only screen and (max-width: 767.98px) { .inner-container .sub-heading { font-size: 16px; } }
+.inner-container .sub-sub-heading { font-size: 16px; font-weight: 500; padding-left: 10px; float: left; width: 100%; }
+.inner-container .package-details { padding: 15px 0; }
+@media only screen and (max-width: 767.98px) { .inner-container .package-details { padding-bottom: 0; } }
+.inner-container .package-details dt { padding: 10px; font-size: 16px; font-family: "Work Sans", sans-serif; }
+@media only screen and (max-width: 767.98px) { .inner-container .package-details dt { float: left; } }
+.inner-container .package-details dd { padding: 10px; font-size: 16px; font-family: "Work Sans", sans-serif; text-align: right; }
+@media only screen and (max-width: 767.98px) { .inner-container .package-details dd { text-align: left; margin-bottom: 15px; } }
+@media only screen and (max-width: 767.98px) { .inner-container .package-details dd:last-child { margin-bottom: 0; } }
+.inner-container .form-section { border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.1) 0 0 20px; float: left; width: 100%; background: #fff; padding: 7rem 6rem 3rem 7rem; margin-top: 1rem; }
+.inner-container .form-section button { border: solid 1px transparent; }
+.inner-container .form-section button:hover { border: solid 1px #c40721; }
+.inner-container .form-section .input-boxes { border: 0; border-bottom: solid 2px rgba(196, 7, 33, 0.1); box-shadow: 0 0 0; border-radius: 0; padding: 25px 0; }
+.inner-container .form-section label { font-size: 20px; font-weight: 500; padding-left: 14px; }
+.inner-container .form-section label:before { width: 2rem; height: 2rem; border: #c40721 solid 1px; }
+.inner-container .form-section label:after { width: 2rem; height: 2rem; }
+.inner-container .form-section .custom-control-input:checked ~ .custom-control-label::before { background: #c40721; }
+.inner-container .form-section .custom-control-input:focus ~ .custom-control-label::before { box-shadow: 0 0 0 0.3rem rgba(196, 7, 33, 0.1); }
+
+footer { background: #515151; padding: 8rem 0; color: #fff; float: left; width: 100%; }
+@media only screen and (max-width: 767.98px) { footer { padding: 3rem 0; } }
+footer ul { width: 100%; margin-top: 10px; margin-left: 0; text-align: center; padding: 0; }
+@media only screen and (max-width: 767.98px) { footer ul { text-align: left; } }
+footer ul li { display: inline-block; transition: all .3s ease-in-out; width: 100%; }
 footer ul li:hover { transform: translateY(-3px); }
 footer ul li a { transition: all .3s ease-in-out; font-size: 18px; font-weight: 600; color: #fff; padding: 17px 25px !important; }
+@media only screen and (max-width: 767.98px) { footer ul li a { font-weight: 400; padding: 2px 0 !important; float: left; width: 100%; display: block; } }
 footer ul li a:hover { color: #fff; }
 footer ul li a:after { content: '.'; }
 footer p { color: #fff; text-align: center; width: 100%; padding: 5rem 0 0; float: left; }
+@media only screen and (max-width: 767.98px) { footer p { padding: 2rem 0 0; } }
 footer p a { color: #fff; display: inline-block; transition: all .3s ease-in-out; padding: 0 30px; }
+@media only screen and (max-width: 767.98px) { footer p a { padding: 0 10px; } }
+@media only screen and (max-width: 767.98px) { footer p a .fa-3x { font-size: 3rem; } }
 footer p a:hover { transform: translateY(-10px); color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
