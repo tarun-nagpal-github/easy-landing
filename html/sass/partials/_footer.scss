@@ -2,9 +2,10 @@ footer {
     background: #515151;
     padding: 8rem 0;
     color: $white-color;
-    float:left;
-    width:100%;
-    @media #{$sm}{
+    float: left;
+    width: 100%;
+
+    @media #{$sm} {
         padding: 3rem 0;
     }
 
@@ -13,36 +14,48 @@ footer {
         margin-top: 10px;
         margin-left: 0;
         text-align: center;
-        padding:0; 
+        padding: 0;
+
         @media #{$sm} {
-            text-align:left;
+            text-align: left;
         }
 
         li {
             display: inline-block;
-            transition: all .3s ease-in-out; 
+            transition: all .3s ease-in-out;
+
             @media #{$sm} {
-                width:100%;
-            }   
-            
-            
+                width: 100%;
+            }
+
+
             &:hover {
                 transform: translateY(-3px);
             }
 
             a {
-                transition: all .3s ease-in-out; 
+                transition: all .3s ease-in-out;
                 font-size: 18px;
                 font-weight: 600;
-                color: $white-color;
+                color: $white-color; 
                 padding: 17px 25px !important;
+
                 @media #{$sm} {
                     font-weight: 400;
-                    padding:2px 0 !important;
+                    padding: 2px 0 !important;
                     float: left;
-                    width:100%;
+                    width: 100%;
                     display: block;
                 }
+
+                @media #{$md} {
+                    transition: all .3s ease-in-out;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #fff;
+                    padding: 11px 10px !important
+                }
+
                 &:hover {
                     color: $white-color;
                 }
@@ -50,35 +63,41 @@ footer {
                 &:after {
                     content: '.';
                 }
-            }  
+            }
         }
     }
-    p{
-        color:$white-color;
+
+    p {
+        color: $white-color;
         text-align: center;
-        width:100%;
-        padding:5rem 0 0;
-        float:left;
-        @media  #{$sm} {
-            padding:2rem 0 0;
-            
+        width: 100%;
+        padding: 5rem 0 0;
+        float: left;
+
+        @media #{$sm} {
+            padding: 2rem 0 0;
+
         }
-        a{
-            color:$white-color;
+
+        a {
+            color: $white-color;
             display: inline-block;
             transition: all .3s ease-in-out;
-            padding:0 30px;
-            @media #{$sm}{
-                padding:0 10px;
+            padding: 0 30px;
+
+            @media #{$sm} {
+                padding: 0 10px;
             }
-            .fa-3x{ 
-                @media #{$sm}{
+
+            .fa-3x {
+                @media #{$sm} {
                     font-size: 3rem;
                 }
             }
-            &:hover{
+
+            &:hover {
                 transform: translateY(-10px);
-                color:$white-color;
+                color: $white-color;
             }
         }
 

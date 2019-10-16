@@ -6646,10 +6646,12 @@ footer { background: #515151; padding: 8rem 0; color: #fff; float: left; width: 
 @media only screen and (max-width: 767.98px) { footer { padding: 3rem 0; } }
 footer ul { width: 100%; margin-top: 10px; margin-left: 0; text-align: center; padding: 0; }
 @media only screen and (max-width: 767.98px) { footer ul { text-align: left; } }
-footer ul li { display: inline-block; transition: all .3s ease-in-out; width: 100%; }
+footer ul li { display: inline-block; transition: all .3s ease-in-out; }
+@media only screen and (max-width: 767.98px) { footer ul li { width: 100%; } }
 footer ul li:hover { transform: translateY(-3px); }
 footer ul li a { transition: all .3s ease-in-out; font-size: 18px; font-weight: 600; color: #fff; padding: 17px 25px !important; }
 @media only screen and (max-width: 767.98px) { footer ul li a { font-weight: 400; padding: 2px 0 !important; float: left; width: 100%; display: block; } }
+@media only screen and (max-width: 991.98px) { footer ul li a { transition: all .3s ease-in-out; font-size: 18px; font-weight: 600; color: #fff; padding: 11px 10px !important; } }
 footer ul li a:hover { color: #fff; }
 footer ul li a:after { content: '.'; }
 footer p { color: #fff; text-align: center; width: 100%; padding: 5rem 0 0; float: left; }
