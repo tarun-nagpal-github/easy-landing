@@ -27,7 +27,7 @@
     }
 
     h3 {
-        font-size: 64px;
+        font-size: 44px;
         color: $white-color;
         font-weight: 700;
         @media #{$md} {
@@ -45,7 +45,8 @@
     h4 {
         color: $white-color;
         font-weight: 500;
-        font-size: 36px;
+        font-size: 48px;
+        margin-top:0;
         span{
             font-weight: 700;
             font-style: italic;
@@ -78,19 +79,33 @@
             font-size: 16px;
             font-weight: 500;
         }
+        .child-pessenger{
+             
+                text-align:center;
+             
+        }
         select.form-control{
             padding:13px 15px;
         }
         .select-passenger{
+            border: solid 1px rgb(206, 206, 206);
+            padding: 10px;
+            border-radius: 5px;
             label{
                 text-align: center;
                 width:100%;
             }
-            border:solid 1px rgba(0, 0, 0, .1);
-            padding:10px;
+            
             input{
                 border:0;
                 text-align: center;
+            }
+            
+            .add{
+                float: right;
+            }
+            .sub{
+                float: left;
             }
             button{
                 background: transparent;
