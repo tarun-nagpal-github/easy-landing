@@ -8,9 +8,10 @@
         margin: 0 !important;
     }
 
-    .inner-row-content{
-        padding:0;
+    .inner-row-content {
+        padding: 0;
     }
+
     .section-heading {
         font-size: 28px;
         font-family: $work;
@@ -18,12 +19,13 @@
         color: $red-color;
         margin-top: 0;
         margin-bottom: 2rem;
-       
+
         @media #{$sm} {
             font-size: 19px;
             font-weight: bold;
             text-align: left;
         }
+
         @media #{$xs} {
             font-size: 16px;
             font-weight: bold;
@@ -98,9 +100,11 @@
         background: $white-color;
         padding: 7rem 6rem 3rem 7rem;
         margin-top: 1rem;
+
         @media #{$xs} {
-            padding:3rem;
+            padding: 3rem;
         }
+
         button {
             border: solid 1px transparent;
 
@@ -121,28 +125,32 @@
             font-size: 20px;
             font-weight: 500;
             padding-left: 14px;
+
             @media #{$xs} {
                 font-size: 16px;
             }
+
             &:before {
                 width: 2rem;
                 height: 2rem;
                 border: $red-color solid 1px;
+
                 @media #{$xs} {
-                    width:1.7rem;
-                    height:1.7rem;
+                    width: 1.7rem;
+                    height: 1.7rem;
                 }
             }
 
             &:after {
                 width: 2rem;
                 height: 2rem;
+
                 @media #{$xs} {
-                    width:1.7rem;
-                    height:1.7rem;
+                    width: 1.7rem;
+                    height: 1.7rem;
                 }
             }
-        }
+        } 
 
         .custom-control-input:checked~.custom-control-label::before {
             background: $red-color;
@@ -152,6 +160,14 @@
             box-shadow: 0 0 0 0.3rem rgba(196, 7, 33, .1);
         }
 
+    }
+
+    .setup-content {
+        button {
+            padding: 8px 30px;
+            font-size: 16px;
+            font-weight: normal;
+        }
     }
 
 }

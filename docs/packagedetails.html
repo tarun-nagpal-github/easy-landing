@@ -55,7 +55,7 @@
             <div class="col-md-12">
                <div class="row">
                   <div class="col-sm-12 offset-sm-0 col-md-5">
-                     <div class="stepwizard">
+                     <div class="stepwizard d-none">
                         <div class="stepwizard-row setup-panel">
                            <div class="row">
                               <div class="stepwizard-step col-xs-3">
@@ -81,79 +81,182 @@
                      <form role="form">
                         <div class="panel panel-primary setup-content" id="step-1">
                            <div class="panel-heading">
-                              <h3 class="panel-title">Shipper</h3>
+                              <h3 class="section-heading mb-1">Set Host preferences</h3>
+                              <h4 class="sub-sub-heading mb-4 pb-3 text-center">Let's connect you to the Host of your
+                                 choice!! </h4>
                            </div>
                            <div class="panel-body">
-                              <div class="form-group">
-                                 <label class="control-label">First Name</label>
-                                 <input maxlength="100" type="text" required="required" class="form-control"
-                                    placeholder="Enter First Name" />
+                              <div class="form-group w-100 float-left">
+                                 <div class="row" style="clear: both;">
+                                    <label class="control-label col-12 col-sm-6 col-md-4">Country</label>
+                                    <div class="col-12 col-sm-6 col-md-8 input-group mb-3">
+                                       <select class="custom-select">
+                                          <option selected>Choose...</option>
+                                          <option value="1">Pakistan</option>
+                                          <option value="2">Sri Lanka</option>
+                                          <option value="3">Bangladesh</option>
+                                          <option value="4">Iran</option>
+                                       </select>
+                                    </div>
+                                 </div>
                               </div>
-                              <div class="form-group">
-                                 <label class="control-label">Last Name</label>
-                                 <input maxlength="100" type="text" required="required" class="form-control"
-                                    placeholder="Enter Last Name" />
+                              <div class="form-group w-100 float-left">
+                                 <div class="row" style="clear: both;">
+                                    <label class="control-label col-12 col-sm-6 col-md-4">State</label>
+                                    <div class="col-12 col-sm-6 col-md-8 input-group mb-3">
+                                       <select class="custom-select">
+                                          <option selected>Choose...</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                       </select>
+                                    </div>
+                                 </div>
                               </div>
-                              <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+                              <div class="form-group w-100 float-left">
+                                 <div class="row" style="clear: both;">
+                                    <label class="control-label col-12 col-sm-6 col-md-4">Language</label>
+                                    <div class="col-12 col-sm-6 col-md-8 input-group mb-3">
+                                       <select class="custom-select">
+                                          <option selected>Tamil</option>
+                                          <option value="1">English</option>
+                                          <option value="2">Hindi</option>
+                                          <option value="3">Punjabi</option>
+
+                                          <option>Gujarati</option>
+                                          <option value="1">Urdu</option>
+                                          <option value="2">Telugu</option>
+                                          <option value="3">Malayalam</option>
+                                          <option value="4">Bengali</option>
+                                          <option value="5">Marathis</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="form-group w-100 float-left">
+
+                                 <div class="row" style="clear: both;">
+                                    <label class="control-label col-12 col-sm-6 col-md-4">Profession</label>
+                                    <div class="col-12 col-sm-6 col-md-8 input-group mb-3">
+                                       <select class="custom-select">
+                                          <option selected>Choose...</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="form-group w-100 float-left">
+                                 <div class="row" style="clear: both;">
+                                    <label class="control-label col-12 col-sm-6 col-md-4">Hobbies</label>
+                                    <div class="col-12 col-sm-6 col-md-8 input-group mb-3">
+                                       <select class="custom-select">
+                                          <option selected>Choose...</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="form-group w-100 float-left">
+                                 <div class="row" style="clear: both;">
+                                    <label class="control-label col-12 col-sm-6 col-md-4">Skills</label>
+                                    <div class="col-12 col-sm-6 col-md-8 input-group mb-3">
+                                       <select class="custom-select">
+                                          <option selected>Choose...</option>
+                                          <option value="1">One</option>
+                                          <option value="2">Two</option>
+                                          <option value="3">Three</option>
+                                       </select>
+                                    </div>
+                                 </div>
+
+                              </div>
+
+
+                              <div class="col-md-12 text-center" style="clear: both;">
+                                 <button class="button mr-3 mt-4 link" type="button">Skip</button>
+                                 <button class="button mr-3 mt-4" type="button">Back</button>
+                                 <button class="button nextBtn" type="button">Next</button>
+                              </div>
                            </div>
                         </div>
 
                         <div class="panel panel-primary setup-content" id="step-2">
                            <div class="panel-heading">
-                              <h3 class="panel-title">Destination</h3>
+                              <h3 class="section-heading mb-3">Select Exclusive EasyLanding Services</h3>
                            </div>
-                           <div class="panel-body">
-                              <div class="form-group">
-                                 <label class="control-label">Company Name</label>
-                                 <input maxlength="200" type="text" required="required" class="form-control"
-                                    placeholder="Enter Company Name" />
-                              </div>
-                              <div class="form-group">
-                                 <label class="control-label">Company Address</label>
-                                 <input maxlength="200" type="text" required="required" class="form-control"
-                                    placeholder="Enter Company Address" />
-                              </div>
-                              <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+
+                           <div class="custom-control mb-3   custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="oba">
+                              <label class="custom-control-label" for="oba">Open Bank Account</label>
                            </div>
+
+                           <div class="custom-control mb-2 custom-checkbox">
+                              <input type="checkbox" id="afb" class="custom-control-input">
+                              <label class="custom-control-label" for="afb"> Apply for BCiD</label>
+                           </div>
+
+                           <div class="custom-control mb-2 custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="fpa">
+                              <label class="custom-control-label" for="fpa">Help with finding Permanent
+                                 accomodation</label>
+                           </div>
+                           <div class="custom-control mb-2 custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="tpt">
+                              <label class="custom-control-label" for="tpt">One day tour in Public Transport </label>
+                           </div>
+                           <div class="custom-control mb-3   custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="gst">
+                              <label class="custom-control-label" for="gst">Grocery and Shopping Tour</label>
+                           </div>
+                           <div class="custom-control mb-3   custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="fnc">
+                              <label class="custom-control-label" for="fnc">Help with finding a new car</label>
+                           </div>
+                           <div class="custom-control mb-3   custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="hic">
+                              <label class="custom-control-label" for="hic"> In House immigration Consultation</label>
+                           </div>
+                           <div class="custom-control mb-3   custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="asn">
+                              <label class="custom-control-label" for="asn">Apply for SIN Number</label>
+                           </div>
+                           <div class="custom-control mb-3   custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="tdl">
+                              <label class="custom-control-label" for="tdl">Take Driving Lessons</label>
+                           </div>
+                           <div class="custom-control mb-3   custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="nap">
+                              <label class="custom-control-label" for="nap">Need Airport Pickup</label>
+                           </div>
+
+                           <div class="col-md-12 text-center" style="clear: both;">
+                              <button class="button mr-3 mt-4" type="button">Back</button>
+                              <button class="button nextBtn" type="button">Next</button>
+                           </div>
+
                         </div>
 
                         <div class="panel panel-primary setup-content" id="step-3">
                            <div class="panel-heading">
-                              <h3 class="panel-title">Schedule</h3>
+                              <h3 class="section-heading mb-1">Any additional Service Request</h3>
                            </div>
                            <div class="panel-body">
-                              <div class="form-group">
-                                 <label class="control-label">Company Name</label>
-                                 <input maxlength="200" type="text" required="required" class="form-control"
-                                    placeholder="Enter Company Name" />
+                              <p> Any kind og additional service you need then please mention in this box</p>
+                              <div class="form-group"> 
+                                 <textarea class="form-control is-invalid" style="min-height:200px"
+                                    id="validationTextarea" placeholder="Required example textarea" required></textarea> 
                               </div>
-                              <div class="form-group">
-                                 <label class="control-label">Company Address</label>
-                                 <input maxlength="200" type="text" required="required" class="form-control"
-                                    placeholder="Enter Company Address" />
-                              </div>
-                              <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
-                           </div>
-                        </div>
 
-                        <div class="panel panel-primary setup-content" id="step-4">
-                           <div class="panel-heading">
-                              <h3 class="panel-title">Cargo</h3>
-                           </div>
-                           <div class="panel-body">
-                              <div class="form-group">
-                                 <label class="control-label">Company Name</label>
-                                 <input maxlength="200" type="text" required="required" class="form-control"
-                                    placeholder="Enter Company Name" />
+                              <div class="col-md-12 text-center" style="clear: both;">
+                                 <button class="button mr-3 mt-4" type="button">Finish</button>
                               </div>
-                              <div class="form-group">
-                                 <label class="control-label">Company Address</label>
-                                 <input maxlength="200" type="text" required="required" class="form-control"
-                                    placeholder="Enter Company Address" />
-                              </div>
-                              <button class="btn btn-success pull-right" type="submit">Finish!</button>
                            </div>
                         </div>
+ 
                      </form>
 
                   </div>
@@ -161,68 +264,71 @@
                      <h2 class="section-heading mb-4"> Your package detail so far… </h2>
 
                      <h3 class="sub-heading">Primary Information</h3>
-                     
-                     <dl class="col-md-12 package-details"><div class="row" style="clear:both;"> 
-                        <dt class="col-sm-12 col-md-6">Landing at : </dt>
-                        <dd class="col-sm-12 col-md-6">airport name </dd>
 
-                        <dt class="col-sm-12 col-md-6">Arrival on : </dt>
-                        <dd class="col-sm-12 col-md-6">
-                           10 - Jan - 2020
-                        </dd>
+                     <dl class="col-md-12 package-details">
+                        <div class="row" style="clear:both;">
+                           <dt class="col-sm-12 col-md-6">Landing at : </dt>
+                           <dd class="col-sm-12 col-md-6">airport name </dd>
 
-                        <dt class="col-sm-12 col-md-6">Family Members : </dt>
-                        <dd class="col-sm-12 col-md-6"> 2 Adults, 2 Kids, 0 Infants.</dd>
+                           <dt class="col-sm-12 col-md-6">Arrival on : </dt>
+                           <dd class="col-sm-12 col-md-6">
+                              10 - Jan - 2020
+                           </dd>
 
-                        <dt class="col-sm-6 text-truncate">Visa Type : </dt>
-                        <dd class="col-sm-12 col-md-6">Student Visa</dd></div>
+                           <dt class="col-sm-12 col-md-6">Family Members : </dt>
+                           <dd class="col-sm-12 col-md-6"> 2 Adults, 2 Kids, 0 Infants.</dd>
+
+                           <dt class="col-sm-6 text-truncate">Visa Type : </dt>
+                           <dd class="col-sm-12 col-md-6">Student Visa</dd>
+                        </div>
                      </dl>
 
-                     <dl class="col-md-12 package-details"><div class="row" style="clear:both;"> 
-                        <dt class="col-sm-6 text-truncate"><strong>Services Selected</strong></dt>
-                        <dd class="col-sm-12 col-md-6"><strong>Price</strong></dd>
+                     <dl class="col-md-12 package-details">
+                        <div class="row" style="clear:both;">
+                           <dt class="col-sm-6 text-truncate"><strong>Services Selected</strong></dt>
+                           <dd class="col-sm-12 col-md-6"><strong>Price</strong></dd>
 
-                        <h3 class="sub-sub-heading mb-4">Pickup Details</h3>
+                           <h3 class="sub-sub-heading mb-4">Pickup Details</h3>
 
-                        <dt class="col-sm-12 col-md-6">Need airport pickup : Yes</dt>
-                        <dd class="col-sm-12 col-md-6"> $50 </dd>
-                        <div class="clearfix">&nbsp;</div>
-                        <dt class="col-sm-12 col-md-6">Pick up TIme : 11 - Jan - 2020</dt>
-                        <dd class="col-sm-12 col-md-6">10 - Jan - 2020</dd>
+                           <dt class="col-sm-12 col-md-6">Need airport pickup : Yes</dt>
+                           <dd class="col-sm-12 col-md-6"> $50 </dd>
+                           <div class="clearfix">&nbsp;</div>
+                           <dt class="col-sm-12 col-md-6">Pick up TIme : 11 - Jan - 2020</dt>
+                           <dd class="col-sm-12 col-md-6">10 - Jan - 2020</dd>
 
-                        <h3 class="sub-sub-heading mb-4">Accomodation</h3>
+                           <h3 class="sub-sub-heading mb-4">Accomodation</h3>
 
-                        <dt class="col-sm-6 text-truncate">Check in: 11 - Jan - 2020 </dt>
-                        <dd class="col-sm-12 col-md-6">Student Visa</dd>
+                           <dt class="col-sm-6 text-truncate">Check in: 11 - Jan - 2020 </dt>
+                           <dd class="col-sm-12 col-md-6">Student Visa</dd>
 
-                        <dt class="col-sm-6 text-truncate">Type : Luxury</dt>
-                        <dd class="col-sm-12 col-md-6">Student Visa</dd>
+                           <dt class="col-sm-6 text-truncate">Type : Luxury</dt>
+                           <dd class="col-sm-12 col-md-6">Student Visa</dd>
 
-                        <dt class="col-sm-6 text-truncate">No. of Rooms : 1</dt>
-                        <dd class="col-sm-12 col-md-6">$1000</dd>
+                           <dt class="col-sm-6 text-truncate">No. of Rooms : 1</dt>
+                           <dd class="col-sm-12 col-md-6">$1000</dd>
 
-                        <dt class="col-sm-6 text-truncate">No. of Bathrooms : 1</dt>
-                        <dd class="col-sm-12 col-md-6">$1000</dd>
+                           <dt class="col-sm-6 text-truncate">No. of Bathrooms : 1</dt>
+                           <dd class="col-sm-12 col-md-6">$1000</dd>
 
-                        <h3 class="sub-sub-heading mb-4">Ammenities Selected <em>(*Show only selected Amenties)</em>
-                        </h3>
+                           <h3 class="sub-sub-heading mb-4">Ammenities Selected <em>(*Show only selected Amenties)</em>
+                           </h3>
 
-                        <dt class="col-sm-6 text-truncate"> Air Conditioner </dt>
-                        <dd class="col-sm-12 col-md-6">$50</dd>
+                           <dt class="col-sm-6 text-truncate"> Air Conditioner </dt>
+                           <dd class="col-sm-12 col-md-6">$50</dd>
 
-                        <dt class="col-sm-6 text-truncate"> In-suite Laundry </dt>
-                        <dd class="col-sm-12 col-md-6">$50</dd>
+                           <dt class="col-sm-6 text-truncate"> In-suite Laundry </dt>
+                           <dd class="col-sm-12 col-md-6">$50</dd>
 
-                        <dt class="col-sm-6 text-truncate"> Crib </dt>
-                        <dd class="col-sm-12 col-md-6">$50</dd>
+                           <dt class="col-sm-6 text-truncate"> Crib </dt>
+                           <dd class="col-sm-12 col-md-6">$50</dd>
 
-                        <dt class="col-sm-6 text-truncate">Grocery </dt>
-                        <dd class="col-sm-12 col-md-6">$0</dd>
+                           <dt class="col-sm-6 text-truncate">Grocery </dt>
+                           <dd class="col-sm-12 col-md-6">$0</dd>
 
-                        <dt class="col-sm-6 text-truncate text-right">Sub Total</dt>
-                        <dd class="col-sm-12 col-md-6">$0</dd>
+                           <dt class="col-sm-6 text-truncate text-right">Sub Total</dt>
+                           <dd class="col-sm-12 col-md-6">$0</dd>
 
-                     </div>
+                        </div>
                      </dl>
                   </div>
 
