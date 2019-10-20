@@ -1,0 +1,121 @@
+$red-color: #c40721;
+$grey-color: #6e757a;
+$blue-color: #314584;
+$white-color : #fff;
+$patric: 'Patrick Hand', cursive;
+$work :  'Work Sans', sans-serif;
+ 
+
+$xs: "only screen and (max-width : 575.98px)";
+$sm: "only screen and (max-width : 767.98px)";
+$md: "only screen and (max-width : 991.98px)";
+$lg: "only screen and (max-width : 1199.98px)";
+$lg-width: "only screen and (max-width : 1499.98px)";
+$xl: "only screen and (min-width : 1500px)";
+$very-large-desktop: "only screen and (min-width : 1750px)";
+
+footer {
+    background: #515151;
+    padding: 8rem 0;
+    color: $white-color;
+    float: left;
+    width: 100%;
+
+    @media #{$sm} {
+        padding: 3rem 0;
+    }
+
+    ul {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+        text-align: center;
+        padding: 0;
+
+        @media #{$sm} {
+            text-align: left;
+        }
+
+        li {
+            display: inline-block;
+            transition: all .3s ease-in-out;
+
+            @media #{$sm} {
+                width: 100%;
+            }
+
+
+            &:hover {
+                transform: translateY(-3px);
+            }
+
+            a {
+                transition: all .3s ease-in-out;
+                font-size: 18px;
+                font-weight: 600;
+                color: $white-color; 
+                padding: 17px 25px !important;
+
+                @media #{$sm} {
+                    font-weight: 400;
+                    padding: 2px 0 !important;
+                    float: left;
+                    width: 100%;
+                    display: block;
+                }
+
+                @media #{$md} {
+                    transition: all .3s ease-in-out;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #fff;
+                    padding: 11px 10px !important
+                }
+
+                &:hover {
+                    color: $white-color;
+                }
+
+                &:after {
+                    content: '.';
+                }
+            }
+        }
+    }
+
+    p {
+        color: $white-color;
+        text-align: center;
+        width: 100%;
+        padding: 5rem 0 0;
+        float: left;
+
+        @media #{$sm} {
+            padding: 2rem 0 0;
+
+        }
+
+        a {
+            color: $white-color;
+            display: inline-block;
+            transition: all .3s ease-in-out;
+            padding: 0 30px;
+
+            @media #{$sm} {
+                padding: 0 10px;
+            }
+
+            .fa-3x {
+                @media #{$sm} {
+                    font-size: 3rem;
+                }
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+                color: $white-color;
+            }
+        }
+
+    }
+}

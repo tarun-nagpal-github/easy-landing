@@ -1,0 +1,192 @@
+
+
+$red-color: #c40721;
+$grey-color: #6e757a;
+$blue-color: #314584;
+$white-color : #fff;
+$patric: 'Patrick Hand', cursive;
+$work :  'Work Sans', sans-serif;
+ 
+
+$xs: "only screen and (max-width : 575.98px)";
+$sm: "only screen and (max-width : 767.98px)";
+$md: "only screen and (max-width : 991.98px)";
+$lg: "only screen and (max-width : 1199.98px)";
+$lg-width: "only screen and (max-width : 1499.98px)";
+$xl: "only screen and (min-width : 1500px)";
+$very-large-desktop: "only screen and (min-width : 1750px)";
+
+
+.inner-container {
+    width: 100%;
+    float: left;
+    padding: 5rem 0;
+    margin: 0 !important;
+
+    .row {
+        margin: 0 !important;
+    }
+
+    .inner-row-content {
+        padding: 0;
+    }
+
+    .section-heading {
+        font-size: 28px;
+        font-family: $work;
+        text-align: center;
+        color: $red-color;
+        margin-top: 0;
+        margin-bottom: 2rem;
+
+        @media #{$sm} {
+            font-size: 19px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        @media #{$xs} {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+        }
+    }
+
+    .sub-heading {
+        font-size: 20px;
+        font-family: $work;
+        color: $blue-color;
+        float: left;
+        width: 100%;
+        margin-bottom: 2rem;
+        margin-bottom: 0;
+
+        @media #{$sm} {
+            font-size: 16px;
+        }
+    }
+
+    .sub-sub-heading {
+        font-size: 16px;
+        font-weight: 500;
+        padding-left: 10px;
+        float: left;
+        width: 100%;
+    }
+
+    .package-details {
+        padding: 15px 0;
+
+        @media #{$sm} {
+            padding-bottom: 0;
+        }
+
+        dt {
+            padding: 10px;
+            font-size: 16px;
+            font-family: $work;
+
+            @media #{$sm} {
+                float: left;
+            }
+        }
+
+        dd {
+            padding: 10px;
+            font-size: 16px;
+            font-family: $work;
+            text-align: right;
+
+            @media #{$sm} {
+                text-align: left;
+                margin-bottom: 15px;
+            }
+
+            &:last-child {
+                @media #{$sm} {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+    }
+
+    .form-section {
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, .1) 0 0 20px;
+        float: left;
+        width: 100%;
+        background: $white-color;
+        padding: 7rem 6rem 3rem 7rem;
+        margin-top: 1rem;
+
+        @media #{$xs} {
+            padding: 3rem;
+        }
+
+        button {
+            border: solid 1px transparent;
+
+            &:hover {
+                border: solid 1px $red-color;
+            }
+        }
+
+        .input-boxes {
+            border: 0;
+            border-bottom: solid 2px rgba(196, 7, 33, 0.1);
+            box-shadow: 0 0 0;
+            border-radius: 0;
+            padding: 25px 0;
+        }
+
+        label {
+            font-size: 20px;
+            font-weight: 500;
+            padding-left: 14px;
+
+            @media #{$xs} {
+                font-size: 16px;
+            }
+
+            &:before {
+                width: 2rem;
+                height: 2rem;
+                border: $red-color solid 1px;
+
+                @media #{$xs} {
+                    width: 1.7rem;
+                    height: 1.7rem;
+                }
+            }
+
+            &:after {
+                width: 2rem;
+                height: 2rem;
+
+                @media #{$xs} {
+                    width: 1.7rem;
+                    height: 1.7rem;
+                }
+            }
+        } 
+
+        .custom-control-input:checked~.custom-control-label::before {
+            background: $red-color;
+        }
+
+        .custom-control-input:focus~.custom-control-label::before {
+            box-shadow: 0 0 0 0.3rem rgba(196, 7, 33, .1);
+        }
+
+    }
+
+    .setup-content {
+        button {
+            padding: 8px 30px;
+            font-size: 16px;
+            font-weight: normal;
+        }
+    }
+
+}

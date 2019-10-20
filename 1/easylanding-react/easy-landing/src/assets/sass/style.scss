@@ -1,0 +1,18 @@
+@import 'variables';
+@import 'mixins';
+
+@import 'vendor/bootstrap.min'; 
+@import 'vendor/aos-animation';
+@import 'vendor/font-awesome';
+@import 'vendor/owl-carousel-min';
+@import 'vendor/owl-theme-default';
+
+
+@import 'common';
+
+@import 'partials/header';
+
+@import 'pages/home'; 
+@import 'pages/innerPages';  
+
+@import 'partials/footer';

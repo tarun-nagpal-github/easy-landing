@@ -1,0 +1,155 @@
+html {
+    height: auto !important;
+}
+
+body {
+    font-family: $work !important;
+    background-image: url(../images/body-bg.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 920px;
+
+}
+
+a {
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+p {
+    color: $blue-color;
+    font-size: 15px;
+}
+
+.row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.height-equal-box {
+    height: 100%;
+    color: #fff;
+}
+
+.outer-container {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.button {
+    background: $red-color;
+    color: $white-color;
+    padding: 17px 40px;
+    font-size: 18px;
+    font-family: $work;
+    transition: all ease-in-out .3s;
+    display: inline-block;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 0;
+
+    @media #{$md} {
+        padding: 12px 20px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &:hover {
+        background: $white-color;
+        transform: translateY(-7px);
+        color: $red-color;
+
+    }
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+
+
+.container {
+    @media #{$very-large-desktop} {
+        max-width: 67%;
+        padding: 0;
+    }
+
+    @media #{$xl} {
+        max-width: 1483px;
+    }
+
+    @media #{$lg-width} {
+        max-width: 95%;
+        padding: 0 0;
+    }
+
+    @media #{$md} {
+        max-width: 95%;
+    }
+
+    @media #{$sm} {
+        max-width: 100%;
+        padding: 0 13px;
+    }
+}
+
+
+
+.stepwizard-step {
+    p {
+        margin-top: 0px;
+        color: #666;
+    }
+}
+
+ 
+.stepwizard-row {
+    display: table-row;
+}
+
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+
+.stepwizard .btn.disabled,
+.stepwizard .btn[disabled],
+.stepwizard fieldset[disabled] .btn {
+    opacity: 1 !important;
+    color: #bbb;
+}
+
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-index: 0;
+}
+
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+
+    .btn-circle {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 6px 0;
+        font-size: 12px;
+        line-height: 1.428571429;
+        border-radius: 15px;
+    }
+}

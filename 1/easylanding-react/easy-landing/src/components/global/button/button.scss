@@ -1,0 +1,22 @@
+.btn-button {
+    background: #c40721;
+    color: #fff;
+    padding: 17px 40px;
+    font-size: 18px;
+    font-family: "Work Sans", sans-serif;
+    transition: all ease-in-out .3s;
+    display: inline-block;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 0;
+}
+.btn-button:hover {
+    background: #fff;
+    transform: translateY(-7px);
+    color: #c40721;
+}
+
+button:focus, .btn-button:focus {
+    outline:outline !important;
+}
+
