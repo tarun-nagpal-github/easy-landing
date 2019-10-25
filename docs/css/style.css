@@ -6669,16 +6669,16 @@ header nav.navbar .navbar-nav li:last-child { box-shadow: 0 0 18px rgba(0, 0, 0,
 .inner-container .form-section .custom-control-input:focus ~ .custom-control-label::before { box-shadow: 0 0 0 0.3rem rgba(196, 7, 33, 0.1); }
 .inner-container .setup-content button { padding: 8px 30px; font-size: 16px; font-weight: normal; }
 .inner-container .edit-section { font-size: 16px; color: #c40721; }
-.inner-container .top-filters { float: left; clear: both; margin-top: 15px; }
-@media only screen and (max-width: 767.98px) { .inner-container .top-filters { margin-top: 0; padding: 0; } }
-.inner-container .top-filters ul { padding: 0; list-style: none; }
-.inner-container .top-filters ul li { float: left; transition: all .3s ease-in-out; }
-.inner-container .top-filters ul li a { padding: 7px 20px; border: solid 2px #314584; color: #314584; margin: 0 5px; transition: all .3s ease-in-out; }
-@media only screen and (max-width: 767.98px) { .inner-container .top-filters ul li a { float: left; padding: 3px 5px; display: block; margin-bottom: 5px; font-size: 12px; } }
-.inner-container .top-filters ul li:hover a { color: #fff; background-color: #c40721; border-color: #c40721; }
 
 .listing-container { max-width: 80%; }
 @media only screen and (max-width: 991.98px) { .listing-container { max-width: 100%; } }
+.listing-container .top-filters { float: left; clear: both; margin-top: 15px; }
+@media only screen and (max-width: 767.98px) { .listing-container .top-filters { margin-top: 0; padding: 0; } }
+.listing-container .top-filters ul { padding: 0; list-style: none; }
+.listing-container .top-filters ul li { float: left; transition: all .3s ease-in-out; }
+.listing-container .top-filters ul li a { padding: 7px 20px; border: solid 2px #314584; color: #314584; margin: 0 5px; transition: all .3s ease-in-out; }
+@media only screen and (max-width: 767.98px) { .listing-container .top-filters ul li a { float: left; padding: 3px 5px; display: block; margin-bottom: 5px; font-size: 12px; } }
+.listing-container .top-filters ul li:hover a { color: #fff; background-color: #c40721; border-color: #c40721; }
 @media only screen and (max-width: 767.98px) { .listing-container .home-listing { width: 100%; } }
 .listing-container .home-listing li.media { background-color: ivory; border: solid 1px #e6e6e6; border-radius: 5px; margin-bottom: 30px; transition: all .3s ease-in-out; cursor: pointer; }
 @media only screen and (max-width: 767.98px) { .listing-container .home-listing li.media { display: block; } }

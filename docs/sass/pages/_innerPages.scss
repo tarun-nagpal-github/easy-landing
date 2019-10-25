@@ -196,48 +196,5 @@
         color: $red-color;
     }
 
-    .top-filters {
-        float: left;
-        clear: both;
-        margin-top: 15px;
-
-        @media #{$sm} {
-            margin-top: 0;
-            padding: 0;
-        }
-
-        ul {
-            padding: 0;
-            list-style: none;
-
-            li {
-                float: left;
-                transition: all .3s ease-in-out;
-
-                a {
-                    padding: 7px 20px;
-                    border: solid 2px $blue-color;
-                    color: $blue-color;
-                    margin: 0 5px;
-                    transition: all .3s ease-in-out;
-
-                    @media #{$sm} {
-                        float: left;
-                        padding: 3px 5px;
-                        display: block;
-                        margin-bottom: 5px;
-                        font-size: 12px;
-                    }
-                }
-
-                &:hover {
-                    a {
-                        color: $white-color;
-                        background-color: $red-color;
-                        border-color: $red-color;
-                    }
-                }
-            }
-        }
-    }
+    
 }
