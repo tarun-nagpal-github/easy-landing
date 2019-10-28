@@ -6698,6 +6698,38 @@ header nav.navbar .navbar-nav li:last-child { box-shadow: 0 0 18px rgba(0, 0, 0,
 .listing-container .home-listing li.media .host-detail .figure .figure-caption .badge { font-weight: normal; letter-spacing: 1px; font-size: 12px; }
 .listing-container .list-paging { margin-top: 20px; padding-top: 30px; float: left; width: 100%; }
 
+.listing-details { max-width: 86%; }
+@media only screen and (max-width: 991.98px) { .listing-details { max-width: 100%; } }
+.listing-details h5 { font-size: 16px; color: #c40721; margin-top: 20px; }
+.listing-details p { font-size: 14px; color: #333; }
+.listing-details .figure { width: 100%; }
+@media only screen and (max-width: 767.98px) { .listing-details .figure { margin-top: 20px; } }
+.listing-details .figure img { width: 130px; border: solid 2px #c40721; border: 6px 0 0 6px; }
+.listing-details .figure .figure-caption { clear: both; width: 100%; }
+.listing-details .figure .figure-caption .badge { font-weight: normal; letter-spacing: 1px; font-size: 12px; border-radius: 0; }
+.listing-details .left-detail .badge { font-size: 13px; font-weight: normal; padding: 5px 10px; margin-top: 7px; width: calc(96% / 2); border-radius: 0; }
+.listing-details .left-detail .badge:hover { background: #c40721; }
+.listing-details .left-detail .badge a { color: #fff; }
+.listing-details .left-detail .view-all { color: #333; text-decoration: underline; }
+.listing-details .left-detail .view-all:hover { color: #c40721; }
+@media only screen and (max-width: 1199.98px) { .listing-details .right-detail { padding-left: 20px; } }
+.listing-details .right-detail .detail-slider img { border-radius: 3px; }
+.listing-details .right-detail .amenities-links { width: 100%; text-align: center; padding: 8px 15px; margin-bottom: 15px; font-weight: 500; font-size: 14px; }
+.listing-details .right-detail .amenities-links:hover { background: #c40721; }
+.listing-details .right-detail .amenities-links a { color: #fff; }
+.listing-details .right-detail .amenities .badge { padding: 7px 14px; margin-bottom: 10px; border-radius: 0; font-weight: 500; background: transparent; border: solid 1px #c40721; color: #c40721; }
+.listing-details .right-detail .amenities .badge:hover { background-color: #c40721; color: #c40721; }
+.listing-details .right-detail .amenities .badge:hover a { color: #fff; }
+.listing-details .right-detail .amenities .badge a { color: #c40721; font-weight: 500; }
+.listing-details .right-detail .amenities textarea { border-radius: 0; min-height: 100px; resize: none; }
+.listing-details .right-detail .amenities .button { padding: 10px 25px; margin-top: 20px; font-size: 14px; font-weight: 500; float: right; }
+.listing-details .right-detail ul { padding: 0; list-style: none; }
+.listing-details .right-detail ul li { margin: 7px 0; }
+.listing-details .right-detail ul li span { font-weight: 500; }
+.listing-details .right-detail ul li span:after { content: ':'; padding-left: 20px; padding-right: 20px; }
+.listing-details .right-detail ul li em { font-style: normal; color: #c40721; }
+.listing-details .right-detail strong { font-weight: 500; color: #c40721; }
+
 footer { background: #515151; padding: 8rem 0; color: #fff; float: left; width: 100%; }
 @media only screen and (max-width: 767.98px) { footer { padding: 3rem 0; } }
 footer ul { width: 100%; margin-top: 10px; margin-left: 0; text-align: center; padding: 0; }
