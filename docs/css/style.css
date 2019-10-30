@@ -6584,6 +6584,10 @@ p { color: #314584; font-size: 15px; }
 .stepwizard-step { display: table-cell; text-align: center; position: relative; }
 .stepwizard-step .btn-circle { width: 30px; height: 30px; text-align: center; padding: 6px 0; font-size: 12px; line-height: 1.428571429; border-radius: 15px; }
 
+.page-heading { text-align: center; width: 100%; color: #c40721; }
+
+.page-sub-heading { font-size: 16px; font-weight: normal; text-align: center; width: 100%; color: #6e757a; }
+
 header { position: relative; z-index: 1; margin-top: 15px; }
 @media only screen and (max-width: 991.98px) { header { margin-top: 0; } }
 header .navbar-brand { height: auto; padding: 0; }
@@ -6730,41 +6734,31 @@ header nav.navbar .navbar-nav li:last-child { box-shadow: 0 0 18px rgba(0, 0, 0,
 .listing-details .right-detail ul li em { font-style: normal; color: #c40721; }
 .listing-details .right-detail strong { font-weight: 500; color: #c40721; }
 
+.row-eq-height { display: table-cell; }
+
 .blog { max-width: 86%; margin-top: 4rem; margin-bottom: 4rem; }
 @media only screen and (max-width: 991.98px) { .blog { max-width: 100%; } }
-.blog .card { transition: all .3s ease-in-out; margin-bottom: 30px; }
+.blog .card { transition: all .3s ease-in-out; margin-bottom: 30px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); background: #fff; border: 0; }
 .blog .card:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); transform: translate(10px, -10px); }
+.blog .card img { object-fit: cover; object-position: center  top; max-height: 200px; }
 .blog .card em { font-size: 13px; font-style: normal; }
 .blog .card .card-body { padding: 2.5rem; }
 .blog .card .card-title { font-size: 18px; font-weight: 600; color: #c40721; }
 .blog .card p { color: rgba(0, 0, 0, 0.5); font-size: 16px; line-height: 26px; }
 .blog .card .category { text-transform: uppercase; font-style: 14px; font-weight: 400; color: rgba(0, 0, 0, 0.5); padding-top: 10px; margin-top: 10px; border-top: 1px solid rgba(0, 0, 0, 0.2); }
 
-.testimonial-item { position: relative; background: #fff; padding: 31px 50px 47px; border-radius: 5px; margin: 20px 15px 35px; box-shadow: 0 0 20px rgba(51, 51, 51, 0.1); }
-
+.tm-testimonial.style-carousel .testimonial-item { position: relative; background: #fff; padding: 31px 40px 40px !important; border-radius: 5px; margin: 20px 15px 35px; box-shadow: 0 0 20px rgba(51, 51, 51, 0.1); }
 .tm-testimonial.style-carousel .testimonial-info-wrap, .tm-testimonial.style-carousel .testimonial-main-info { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
-
 .tm-testimonial.style-carousel .post-thumbnail { -webkit-flex-shrink: 0; -ms-flex-negative: 0; flex-shrink: 0; margin-right: 20px; }
-
-.tm-testimonial .post-thumbnail img { border-radius: 50%; }
-
+.tm-testimonial.style-carousel .post-thumbnail img { border-radius: 50%; }
 .tm-testimonial.style-carousel .testimonial-info { -webkit-box-flex: 1; -webkit-flex-grow: 1; -ms-flex-positive: 1; flex-grow: 1; }
-
-.tm-testimonial .testimonial-rating { font-size: 16px; margin-bottom: 10px; color: #ffb944; }
-
-.tm-testimonial .testimonial-rating > span { padding: 0 2px; }
-
-.tm-testimonial.style-carousel .testimonial-info-wrap, .tm-testimonial.style-carousel .testimonial-main-info { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
-
+.tm-testimonial.style-carousel .testimonial-rating { font-size: 16px; margin-bottom: 10px; color: #ffb944; }
+.tm-testimonial.style-carousel .testimonial-rating span { padding: 0 2px; color: #ffb944; }
 .tm-testimonial.style-carousel .testimonial-name { font-size: 15px; text-transform: uppercase; line-height: 1.23; margin-bottom: 0; }
-
 .tm-testimonial.style-carousel .testimonial-by-line { margin-left: 5px; font-size: 14px; }
-
 .tm-testimonial.style-carousel .testimonial-by-line:before { content: ' / '; }
-
 .tm-testimonial.style-carousel .testimonial-content { font-size: 18px; line-height: 1.67; }
-
-p:last-child { margin-bottom: 0; }
+.tm-testimonial.style-carousel p:last-child { margin-bottom: 0; }
 
 footer { background: #515151; padding: 8rem 0; color: #fff; float: left; width: 100%; }
 @media only screen and (max-width: 767.98px) { footer { padding: 3rem 0; } }

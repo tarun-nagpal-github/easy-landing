@@ -1,3 +1,6 @@
+.row-eq-height{
+    display: table-cell;
+}
 .blog {
     max-width: 86%;
     margin-top:4rem;
@@ -8,11 +11,18 @@
     .card{
         transition: all .3s ease-in-out;
         margin-bottom: 30px;
+        box-shadow: 0 0 10px rgba(0,0,0,.15);
+        background:#fff;
+        border:0;
         &:hover{
             box-shadow: 0 0 10px rgba(0,0,0,.15);
             transform: translate(10px, -10px);
         }
-        
+        img{
+            object-fit: cover;
+            object-position: center  top;
+            max-height: 200px;
+        }
         
         em{
             font-size: 13px;
