@@ -1,0 +1,44 @@
+.blog {
+    max-width: 86%;
+    margin-top:4rem;
+    margin-bottom: 4rem;
+    @media #{$md} {
+        max-width: 100%;
+    }
+    .card{
+        transition: all .3s ease-in-out;
+        margin-bottom: 30px;
+        &:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,.15);
+            transform: translate(10px, -10px);
+        }
+        
+        
+        em{
+            font-size: 13px;
+            font-style: normal;
+        }
+        .card-body{
+            padding: 2.5rem;
+        }
+        .card-title{
+            font-size: 18px;
+            font-weight: 600;
+            color:$red-color;
+        }
+        p{
+            color:rgba(0,0,0,.5);
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .category{
+            text-transform: uppercase;
+            font-style: 14px;
+            font-weight: 400;
+            color:rgba(0,0,0,.5);
+            padding-top:10px;
+            margin-top:10px;
+            border-top:1px solid rgba(0,0,0,.2);
+        }
+    }
+}
