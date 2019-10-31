@@ -1,0 +1,21 @@
+.user-profile {
+    max-width: 86%;
+
+    @media #{$md} {
+        max-width: 100%;
+    }
+
+    .card-header {
+        background: $red-color;
+        color: $white-color;
+        padding: 7px 20px;
+        font-weight: 500;
+    }
+
+    .button {
+        padding: 7px 30px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+}

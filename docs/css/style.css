@@ -6760,6 +6760,11 @@ header nav.navbar .navbar-nav li:last-child { box-shadow: 0 0 18px rgba(0, 0, 0,
 .tm-testimonial.style-carousel .testimonial-content { font-size: 18px; line-height: 1.67; }
 .tm-testimonial.style-carousel p:last-child { margin-bottom: 0; }
 
+.user-profile { max-width: 86%; }
+@media only screen and (max-width: 991.98px) { .user-profile { max-width: 100%; } }
+.user-profile .card-header { background: #c40721; color: #fff; padding: 7px 20px; font-weight: 500; }
+.user-profile .button { padding: 7px 30px; font-size: 16px; font-weight: 500; }
+
 footer { background: #515151; padding: 8rem 0; color: #fff; float: left; width: 100%; }
 @media only screen and (max-width: 767.98px) { footer { padding: 3rem 0; } }
 footer ul { width: 100%; margin-top: 10px; margin-left: 0; text-align: center; padding: 0; }
