@@ -54,4 +54,23 @@ $(document).ready(function(){
     });
 
     $('div.setup-panel div a.btn-success').trigger('click');
+
+   
+
+
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    $('.dateRange').daterangepicker();
+    $(function () {
+       $('.singleDate').daterangepicker({
+          singleDatePicker: true,
+          showDropdowns: true,
+          minYear: 1901,
+          maxYear: parseInt(moment().format('YYYY'), 10)
+       }, function (start, end, label) {
+          var years = moment().diff(start, 'years');
+          alert("You are " + years + " years old!");
+       });
+    });
+    });

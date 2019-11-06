@@ -62,9 +62,27 @@
                      <div class="col-md-12 top-filters justify-content-center d-flex">
                         <div class="row">
                            <ul>
-                              <li><a href="#">Arrival Date </a></li>
-                              <li><a href="#">Accomodation </a></li>
-                              <li><a href="#"> Members </a></li>
+                              <li class="singleDate"> <a href="#">Arrival Date</a></li> 
+                              <li class="dropdown dateRange">
+                                 <a href="#" data-toggle="dropdown">Accomodation </a>
+                                
+                              </li>
+                              <li class="dropdown">
+                                    <a href="#" data-toggle="dropdown">Members </a>
+                                 
+                                    <div class="dropdown-menu">
+                                         <ul>
+                                            <li>
+                                                <a href="#">1 Member</a>
+                                            </li>
+                                            <li><a href="#">2 Member</a></li>
+                                            <li><a href="#">3 Member</a></li>
+                                            <li><a href="#">4 Member</a></li>
+                                            <li><a href="#">5 Member</a></li>
+                                         </ul> 
+                                           
+                                       </div>
+                                 </li>
                               <li><a href="#">Host Preferences </a></li>
                               <li class="ml-4"> <a href="#"><i class="fas fa-search"></i></a></li>
                            </ul>
@@ -411,44 +429,54 @@
    <!-- Bootstrap core JavaScript ================================================== -->
    <!-- Placed at the end of the document so the pages load faster -->
    <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script type="text/javascript" src="js/popper.min.js"></script>
    <script type="text/javascript" src="js/aos.js"></script>
    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
    <script type="text/javascript" src="js/common.js"></script>
 
+   
+
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
    <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function () {
-         'use strict';
-         window.addEventListener('load', function () {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.getElementsByClassName('needs-validation');
-            // Loop over them and prevent submission
-            var validation = Array.prototype.filter.call(forms, function (form) {
-               form.addEventListener('submit', function (event) {
-                  if (form.checkValidity() === false) {
-                     event.preventDefault();
-                     event.stopPropagation();
-                  }
-                  form.classList.add('was-validated');
-               }, false);
-            });
-         }, false);
-      })();
-
-      $('.add').click(function () {
-         if ($(this).prev().val() < 3) {
-            $(this).prev().val(+$(this).prev().val() + 1);
-         }
-      });
-      $('.sub').click(function () {
-         if ($(this).next().val() > 1) {
-            if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
-         }
-      });
+         // Example starter JavaScript for disabling form submissions if there are invalid fields
+         (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+               // Fetch all the forms we want to apply custom Bootstrap validation styles to
+               var forms = document.getElementsByClassName('needs-validation');
+               // Loop over them and prevent submission
+               var validation = Array.prototype.filter.call(forms, function (form) {
+                  form.addEventListener('submit', function (event) {
+                     if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                     }
+                     form.classList.add('was-validated');
+                  }, false);
+               });
+            }, false);
+         })();
+   
+         $('.add').click(function () {
+            if ($(this).prev().val() < 3) {
+               $(this).prev().val(+$(this).prev().val() + 1);
+            }
+         });
+         $('.sub').click(function () {
+            if ($(this).next().val() > 1) {
+               if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+            }
+         });
+      </script>
+   
+   <script>
+    
+  
    </script>
-
-
-
 </body>
 
 </html>
