@@ -6652,6 +6652,7 @@ header nav.navbar .navbar-nav li:last-child { box-shadow: 0 0 18px rgba(0, 0, 0,
 @media only screen and (max-width: 991.98px) { .inner-container .sub-sub-heading { padding: 0; margin: 0; } }
 @media only screen and (max-width: 767.98px) { .inner-container .sub-sub-heading { padding: 0; margin: 0; } }
 .inner-container .package-details { padding: 15px 0; }
+.inner-container .package-details .user-pic { width: 50px; height: 50px; object-fit: cover; object-position: left top; }
 @media only screen and (max-width: 767.98px) { .inner-container .package-details { padding-bottom: 0; } }
 .inner-container .package-details dt { padding: 10px; font-size: 16px; font-family: "Work Sans", sans-serif; }
 @media only screen and (max-width: 767.98px) { .inner-container .package-details dt { float: left; } }
