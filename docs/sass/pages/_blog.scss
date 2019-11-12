@@ -1,54 +1,64 @@
-.row-eq-height{
+.row-eq-height {
     display: table-cell;
 }
+
 .blog {
     max-width: 86%;
-    margin-top:4rem;
+    margin-top: 4rem;
     margin-bottom: 4rem;
+
     @media #{$md} {
         max-width: 100%;
     }
-    .card{
+
+    .card {
         transition: all .3s ease-in-out;
         margin-bottom: 30px;
-        box-shadow: 0 0 10px rgba(0,0,0,.15);
-        background:#fff;
-        border:0;
-        &:hover{
-            box-shadow: 0 0 10px rgba(0,0,0,.15);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+        background: #fff;
+        border: 0;
+
+        &:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, .15);
             transform: translate(10px, -10px);
         }
-        img{
+
+        img {
             object-fit: cover;
-            object-position: center  top;
-            max-height: 200px;
+            object-position: center top;
+            max-height: 300px;
+            border-radius: 5px;
         }
-        
-        em{
+
+        em {
             font-size: 13px;
             font-style: normal;
         }
-        .card-body{
+
+        .card-body {
             padding: 2.5rem;
         }
-        .card-title{
+
+        .card-title {
             font-size: 18px;
             font-weight: 600;
-            color:$red-color;
+            color: $red-color;
         }
-        p{
-            color:rgba(0,0,0,.5);
+
+        p {
+            color: rgba(0, 0, 0, .5);
             font-size: 16px;
             line-height: 26px;
         }
-        .category{
+
+        .category {
             text-transform: uppercase;
             font-style: 14px;
             font-weight: 400;
-            color:rgba(0,0,0,.5);
-            padding-top:10px;
-            margin-top:10px;
-            border-top:1px solid rgba(0,0,0,.2);
+            color: rgba(0, 0, 0, .5);
+            padding-top: 10px;
+            margin-top: 10px;
+            border-top: 1px solid rgba(0, 0, 0, .2);
         }
     }
 }

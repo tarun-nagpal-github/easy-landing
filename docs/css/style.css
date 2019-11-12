@@ -6740,7 +6740,7 @@ header nav.navbar .navbar-nav li:last-child { box-shadow: 0 0 18px rgba(0, 0, 0,
 @media only screen and (max-width: 991.98px) { .blog { max-width: 100%; } }
 .blog .card { transition: all .3s ease-in-out; margin-bottom: 30px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); background: #fff; border: 0; }
 .blog .card:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); transform: translate(10px, -10px); }
-.blog .card img { object-fit: cover; object-position: center  top; max-height: 200px; }
+.blog .card img { object-fit: cover; object-position: center top; max-height: 300px; border-radius: 5px; }
 .blog .card em { font-size: 13px; font-style: normal; }
 .blog .card .card-body { padding: 2.5rem; }
 .blog .card .card-title { font-size: 18px; font-weight: 600; color: #c40721; }
