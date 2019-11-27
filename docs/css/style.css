@@ -6768,6 +6768,9 @@ header nav.navbar .navbar-nav li:last-child { box-shadow: 0 0 18px rgba(0, 0, 0,
 .user-profile .card-header { background: #c40721; color: #fff; padding: 7px 20px; font-weight: 500; }
 .user-profile .button { padding: 7px 30px; font-size: 16px; font-weight: 500; }
 
+.inner-link { color: #c40721; text-decoration: underline; }
+.inner-link:hover { text-decoration: none; color: #c40721; }
+
 footer { background: #515151; padding: 8rem 0; color: #fff; float: left; width: 100%; }
 @media only screen and (max-width: 767.98px) { footer { padding: 3rem 0; } }
 footer ul { width: 100%; margin-top: 10px; margin-left: 0; text-align: center; padding: 0; }

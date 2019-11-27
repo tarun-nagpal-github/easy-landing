@@ -1,0 +1,8 @@
+.inner-link{
+    color:$red-color;
+    text-decoration: underline;
+    &:hover{
+        text-decoration: none;
+        color:$red-color;
+    }
+}
