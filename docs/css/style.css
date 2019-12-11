@@ -6783,6 +6783,9 @@ header nav.navbar .navbar-nav li:last-child { box-shadow: 0 0 18px rgba(0, 0, 0,
 .message-listing ul li span { display: block; font-size: 14px; margin-bottom: 5px; width: calc(100% - 130px); }
 @media only screen and (max-width: 991.98px) { .message-listing ul li span { width: 100%; } }
 
+.dashboard-filter table tr th { border-top: 0 !important; padding: 10px 15px; }
+.dashboard-filter table tr td { padding: 10px 15px; }
+
 .dashboard-message-detail ul { padding: 0; margin: 0; list-style: none; }
 .dashboard-message-detail ul li { margin-bottom: 10px; border: 0; border-bottom: solid 1px #ccc; border-radius: 0; float: left; width: 100%; padding: 30px; background: #fff; }
 .dashboard-message-detail ul li .list-cent { width: calc(100% - 40px); margin-left: 60px; margin-top: -7px; }
