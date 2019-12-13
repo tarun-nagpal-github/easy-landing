@@ -1,0 +1,58 @@
+.feedback-user {
+  figcaption {
+    color: $red-color;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .section-sub-heading {
+    font-size: 18px;
+    margin-top: 20px;
+    color: $red-color;
+  }
+  .fas {
+    color: $red-color;
+  }
+  .far {
+    color: rgba($color: #000000, $alpha: 0.5);
+  }
+  .list-group-item {
+    border: 0;
+    background-color: transparent;
+    font-weight: 500;
+    color: rgba($color: #000000, $alpha: 0.5);
+    font-size: 16px;
+  }
+  textarea {
+    resize: none;
+  }
+  .like-recomend {
+    label {
+      font-size: 16px;
+    }
+    .custom-control-label {
+      font-size: 16px;
+      font-weight: normal;
+      margin-right: 2rem;
+      padding-left: 10px;
+      line-height: 26px;
+      &:after,
+      &:before {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+    .custom-control-input:checked ~ .custom-control-label::before{
+        border-color : $red-color;
+        background-color : $red-color;
+    }
+
+  }
+  .button{
+    padding: 10px 30px;
+    font-weight: 500;
+    font-size: 16px;
+    &:hover{
+        border: solid 1px $red-color;
+    }
+  }
+}

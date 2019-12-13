@@ -6793,6 +6793,19 @@ header nav.navbar .navbar-nav li:last-child { box-shadow: 0 0 18px rgba(0, 0, 0,
 .dashboard-message-detail ul li h4, .dashboard-message-detail ul li span { width: calc(100% - 60px); }
 .dashboard-message-detail textarea { height: 100px !important; resize: none; }
 
+.feedback-user figcaption { color: #c40721; font-size: 18px; font-weight: 500; }
+.feedback-user .section-sub-heading { font-size: 18px; margin-top: 20px; color: #c40721; }
+.feedback-user .fas { color: #c40721; }
+.feedback-user .far { color: rgba(0, 0, 0, 0.5); }
+.feedback-user .list-group-item { border: 0; background-color: transparent; font-weight: 500; color: rgba(0, 0, 0, 0.5); font-size: 16px; }
+.feedback-user textarea { resize: none; }
+.feedback-user .like-recomend label { font-size: 16px; }
+.feedback-user .like-recomend .custom-control-label { font-size: 16px; font-weight: normal; margin-right: 2rem; padding-left: 10px; line-height: 26px; }
+.feedback-user .like-recomend .custom-control-label:after, .feedback-user .like-recomend .custom-control-label:before { width: 2rem; height: 2rem; }
+.feedback-user .like-recomend .custom-control-input:checked ~ .custom-control-label::before { border-color: #c40721; background-color: #c40721; }
+.feedback-user .button { padding: 10px 30px; font-weight: 500; font-size: 16px; }
+.feedback-user .button:hover { border: solid 1px #c40721; }
+
 footer { background: #515151; padding: 8rem 0; color: #fff; float: left; width: 100%; }
 @media only screen and (max-width: 767.98px) { footer { padding: 3rem 0; } }
 footer ul { width: 100%; margin-top: 10px; margin-left: 0; text-align: center; padding: 0; }
